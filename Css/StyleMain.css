@@ -1,0 +1,362 @@
+/* Import */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+/*--------------------------------------------------------------------------------------*/
+
+/* Config's */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'Signwood';
+    src: url('/Fonts/signwood/SignwoodItalic-K74BA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'DeathStar';
+    src: url('/Fonts/deathStar/Death\ Star.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    overflow: hidden;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* Menu */
+.menu{
+    z-index: 1000;
+    position: absolute;
+    left: 25%;
+}
+.menu-top{
+    margin-top: 3%;
+    width: 100%;
+}
+.menu-top li{
+    display: inline-block;
+    margin-left: 80px;
+}
+.menu-top li a {
+    color: rgba(255, 255, 255, 0.555);
+    font-family: 'Signwood';
+    font-size: 20px;
+}
+.menu-top li a:hover{
+    color: rgb(245, 245, 245);
+}
+/* Links */
+.links{
+    position: fixed;
+    margin-top: 18%;
+    left: 84%;
+
+    font-size: 20px;
+    text-align: right;
+}
+.links a i{
+    margin-top: 20%;
+    margin-left: 50%;
+    color: rgb(15, 126, 160);
+    font-size: 35px;
+}
+.links a i:hover{
+    color: rgb(47, 206, 255);
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* Banner */
+header{
+    width: 100%;
+    height: 100vh;
+}
+/* Fundos */
+.img-fundo{
+    width: 100%;
+    height: 100%;
+
+    background-color: #000000;
+}
+.img-fundo img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    opacity: 0.7;
+}
+.img-item{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.img-item img{
+    width: 80%;
+    height: auto;
+
+    animation: rotate 25s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* Texto */
+.txt-banner{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Signwood';
+}
+.txt-banner p{
+    font-size: 25px;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* Sobre */
+.sobre{    
+    z-index: 900;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.txt-sobre{
+    margin-top: 8%;
+    margin-left: 5%;
+    padding: 40px;
+    width: 45%;
+    height: auto;
+
+    color: white;
+    background-color: #16161641;
+}
+.txt-sobre h2{
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+    color: #00ffd5;
+    font-family: 'DeathStar';
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 25px;
+
+    animation: rgb-txt 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.txt-sobre p{
+    font-size: 16px;
+}
+/* Icons */
+.icons{
+    display: flex;
+}
+.icons i{
+    margin-left: 2%;
+
+    font-size: 22px;
+}
+/* Experiência */
+.txt-xp{
+    margin-top: 8%;
+    margin-left: 3%;
+    padding: 40px;
+    width: 35%;
+    height: auto;
+
+    color: white;
+    background-color: #16161641;
+}
+.txt-xp h2{
+    text-align: center;
+    margin-top: 2%;
+
+    color: #00ffd5;
+    font-family: 'DeathStar';
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 25px;
+
+    animation: rgb-txt 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* Slider */
+#sw1{
+    width: 100%;
+}
+#sc1 li{
+    padding: 10% 20% 15% 20%;
+    font-size: 16px;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* Projetos */
+.projetos{
+    z-index: 900;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 100%;
+    height: auto;
+}
+.caixa-pr{
+    display: flex;
+    margin-bottom: 2%;
+    width: 80%;
+    height: auto;
+
+    color: white;
+
+    background-color: transparent;
+    border: 2px solid white;
+}
+.caixa-pr img{
+    margin-right: 3%;
+    width: 50%;
+    height: auto;
+}
+.txt-pr{
+    padding: 10px;
+}
+.txt-pr h2{
+    margin-bottom: 2%;
+    font-size: 22px;
+    font-family: 'DeathStar';
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.txt-pr p{
+    text-align: left;
+    font-size: 20px;
+}
+.txt-pr button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+
+    color: white;
+
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid white;
+}  
+.txt-pr button:hover{
+    color: #00ffd5;
+    border: 1px solid #00ffd5;
+}
+/* Slider */
+#sc2 li{
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#bt2{
+    margin-right: 18.5%;
+}
+#btns{
+    margin-right: 18%;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* Contato */
+.formulario, .titulo { 
+    margin-bottom: 5%;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: 'DeathStar';
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 25px;
+}
+.formulario { 
+    z-index: 900;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 30%;
+    max-width: 500px;
+    padding: 20px;
+
+    background: transparent;
+    overflow: hidden;
+}
+:focus{outline: none;}
+.label { 
+    position: relative;
+    float: left; 
+    width: 100%; 
+    margin-bottom: 25px; 
+}
+.input-bordas{
+    padding: 7px 14px 9px;
+    width: 100%; 
+
+    color: white;
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    letter-spacing: 1px;
+
+    background-color: transparent;
+    box-sizing: border-box; 
+    border: 1px solid #ffffff; 
+
+    transition: 0.4s;
+}
+.input-bordas::placeholder{
+    color: white;
+}
+.textarea { resize:none!important; }
+.input-bordas ~ .focus-border:before,
+.input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+.input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+.input-bordas ~ .focus-border i:before,
+.input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+.input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+.input-bordas:focus ~ .focus-border:before,
+.input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+.input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
+.input-bordas:focus ~ .focus-border i:before,
+.input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
+.button-form { 
+    cursor: pointer;
+    padding: 0.5em 1.3em;
+    
+    color: #fff;
+    font-size: 1em;
+
+    background-color: #39f;
+    border: none;
+}
+.borda-inversa {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
+  
+}
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    color:#39f; 
+    background: none;
+}
+/*--------------------------------------------------------------------------------------*/

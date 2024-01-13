@@ -12,13 +12,13 @@
 }
 @font-face{
     font-family: 'Signwood';
-    src: url('/fonts/signwood/SignwoodItalic-K74BA.ttf') format('truetype');
+    src: url('/Fonts/signwood/SignwoodItalic-K74BA.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'DeathStar';
-    src: url('/fonts/deathStar/Death\ Star.otf') format('opentype');
+    src: url('/Fonts/deathStar/Death\ Star.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
